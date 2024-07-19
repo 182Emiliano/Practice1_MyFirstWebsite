@@ -4,30 +4,33 @@ body {
     font-family: <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Ga+Maamli&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> ;
+font
     /* Elimina los márgenes y el relleno por defecto */
     margin: 0;
     padding: 0;
     /* Color de fondo del sitio web */
-    background-color: #D0D3D4;
+    background-color: #542c3c;
     text-align: center;
 }
 
 /* Estilos para el encabezado */
 header {
+    font-family: "Arial", sans-serif;
     /* Color de fondo del encabezado */
-    background-image: url("1332803.png");
+    background-image: url("mulberry.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
     /* Color del texto en el encabezado */
-    color: #fff;
+    color: white;
     /* Relleno interno del encabezado */
     padding: 1rem 0;
     /* Alineación del texto en el centro */
     text-align: left;
 }
-
-/* Estilos para la barra de navegación */
 nav ul {
     /* Elimina el estilo de lista por defecto */
-    list-style: none;
+    list-style-type: none;
     /* Elimina el relleno interno */
     padding: 0;
     /* Alineación del texto en el centro */
@@ -37,24 +40,36 @@ nav ul {
     /* Elimina los márgenes */
     margin: 0;
 }
-
-/* Estilos para los elementos de la lista en la barra de navegación */
 nav ul li {
     /* Muestra los elementos en línea */
-    display: inline;
+    display: inline-block;
     /* Elimina los márgenes */
     margin: 0;
+    position: relative;
 }
-
-/* Estilos para los enlaces en la barra de navegación */
 nav ul li a {
-    /* Color del texto del enlace */
-    color: #fff;
-    /* Relleno interno del enlace */
-    padding: 0.5rem 1rem;
-    /* Elimina el subrayado por defecto */
-    text-decoration: none;
-}
+    display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li ul li {
+            display: block;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
 
 /* Estilos para el contenido principal */
 main {
@@ -70,10 +85,11 @@ footer {
     color: #fff;
     /* Alineación del texto en el centro */
     text-align: center;
+
     /* Relleno interno del pie de página */
     padding: 1rem 0;
     /* Fija el pie de página en la parte inferior de la página */
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }

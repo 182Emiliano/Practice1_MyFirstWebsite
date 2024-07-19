@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Especifica el tipo de documento y la versión de HTML -->
+    <meta charset="UTF-8">
+    <!-- Configura el viewport para que el sitio sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>EmiliAno Vargas</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Sección de encabezado del sitio -->
+    <header>
+        <h1>Hola, soy EmiliAno.</h1>
+    </header>
+    <!-- Barra de navegación con enlaces -->
+    <nav>
+        <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="https://www.instagram.com/emiivr_/">FOLLOW MY IG</a></li>
+            <li><a href="About me.html">ABOUT ME</a></li>
+        </ul>
+    </nav>
+    <!-- Contenido principal de la página -->
+    <main>
+        <section>
+            <h2>Soy Emiliano Vargas; músico y diseñador, espero té guste mi arte.</h2>
+
+            <font size="5">
+            <p>Topa este video, es mi canción más reciente :-)</p>
+        </font>
+
+        </section> 
+        <iframe width="660" height="415" src="https://www.youtube.com/embed/j8qL6nzG67M?si=RunNcERIOBJDtapo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</br>
+        <font size="5">   
+           Algunos de mis trabajos :)
+       </font>
+
+        <div class="slider-container">
+        <div class="slider-content">
+            <div class="slider-item">
+                <img width="600" height="600" src="chica colibri.png" alt="Imagen 1">
+            </div>
+            <div class="slider-item">
+                <img width="500" height="750" src="MOLUSCOS EN BIKINI FLYER.png" alt="Imagen 2">
+
+            </div>
+            <div class="slider-item">
+                <img width="600" height="600" src="0tonina album cover-01.png" alt="Imagen 3">
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function plusSlides(n) {
+            slideIndex += n;
+            showSlides();
+        }
+
+        function showSlides() {
+            const slides = document.querySelectorAll(".slider-item");
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+            slides.forEach((slide, index) => {
+                slide.style.display = index === slideIndex ? "block" : "none";
+            });
+            setTimeout(() => {
+                slideIndex++;
+                showSlides();
+            }, 5000); // Cambia la imagen cada 3 segundos
+        }
+    </script>
+    </main>
+    <!-- Pie de página del sitio -->
+    <footer>
+        <p>&copy; Emiliano Vargas Romero 2024. 
+        All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
