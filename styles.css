@@ -1,15 +1,19 @@
 /* Estilos globales para el cuerpo del documento */
 body {
+    background-image: url("fondo02.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
     /* Tipo de letra utilizado */
     font-family: <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Ga+Maamli&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> ;
-font
+    font color: white;
     /* Elimina los márgenes y el relleno por defecto */
     margin: 0;
     padding: 0;
     /* Color de fondo del sitio web */
-    background-color: #542c3c;
+    
     text-align: center;
 }
 
@@ -17,7 +21,7 @@ font
 header {
     font-family: "Arial", sans-serif;
     /* Color de fondo del encabezado */
-    background-image: url("mulberry.jpg");
+    background-image: url("fondo 1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -36,7 +40,7 @@ nav ul {
     /* Alineación del texto en el centro */
     text-align: center;
     /* Color de fondo de la barra de navegación */
-    background-color: #444;
+    background-color: #18171C;
     /* Elimina los márgenes */
     margin: 0;
 }
@@ -80,7 +84,7 @@ main {
 /* Estilos para el pie de página */
 footer {
     /* Color de fondo del pie de página */
-    background-color: #333;
+    background-color: #18171C;
     /* Color del texto en el pie de página */
     color: #fff;
     /* Alineación del texto en el centro */
