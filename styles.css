@@ -79,6 +79,7 @@ nav ul li a {
 main {
     /* Relleno interno del contenido principal */
     padding: 1rem;
+    font-color: white;
 }
 
 /* Estilos para el pie de página */
